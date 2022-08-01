@@ -32,7 +32,7 @@ function ToDo (description) {
 
 // Tu código acá:
 ToDo.prototype.completeToDo = function () {
-  this.complete = true;
+  this.complete = !this.complete;
 }
 
 // Agregar dos parámetros a la función 'buildToDo':
@@ -60,8 +60,10 @@ function buildToDo(todo, index) {
   let toDoText = document.createElement('span');
   toDoText.innerHTML = todo.description;
   toDoText.setAttribute('id', index);
-  toDoText.addEventListener('click', completeToDo);
-  if(todo.comlete) toDoText.setAttribute('class', 'completeText');
+  toDoShell.addEventListener('click', completeToDo);
+  if(todo.comlete) {
+    toDoText.setAttribute('class', 'completeText');
+  }
   toDoShell.appendChild(toDoText);
   return toDoShell;
 }
@@ -92,9 +94,13 @@ function displayToDos() {
   let toDoContainer = document.querySelector('#toDoContainer');
   toDoContainer.innerHTML = '';
   let todoArray = buildToDos(toDoItems);
-  for (let i = 0; i < todoArray.length; i++) {
+  todoArray.forEach((todo) => {
+    return toDoContainer.appendChild(todo)
+  });
+
+  /* for (let i = 0; i < todoArray.length; i++) {
     toDoContainer.appendChild(todoArray[i]);
-  }
+  } */
 }
 
 

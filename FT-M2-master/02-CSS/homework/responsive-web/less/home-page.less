@@ -2,7 +2,14 @@
 
 .home {
 
+
   .intro {
+
+    img {
+      width: 100%;
+      margin-top: 10px;
+      .roundImg (20px);
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +31,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .tecnologia, .ondas {
+        display: none;
+      }
+      .auricular{
+        width: 100%;
+      }
     }
   }
 
@@ -58,17 +74,37 @@
       }
 
       .btn {
+        .styleBtn(@btn-bg-color, white)
       }
     }
 
     .actual-img {
       width: 46%;
       margin-left: 4%;
-
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+    
+    @media @phone {
+      margin-top: 20px;
+      padding: 2%;
+      .flex(column-reverse, center) ;
+      width: 100%;
+      .actual-text {
+        width: 100%;
+      }
+      .actual-img {
+        margin: 2px 0;
+        width: 100%;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px !important;
       }
     }
   }

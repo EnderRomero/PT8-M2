@@ -1,1 +1,31 @@
 // Código de Nav acá
+
+nav {
+  background-color: @nav-bg;
+  color: @nav-font;
+  border-color: @nav-border;
+  padding: 15px;
+  .flex(column, space-around);
+
+  ul {
+    padding: 10px 1%;
+    width: 80%;
+    .flex(row, space-around);
+
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: @main-font-color;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 15px;
+      &:link,
+      &:visited {
+          color: @nav-font;
+        }
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+}
