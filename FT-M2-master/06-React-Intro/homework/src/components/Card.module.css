@@ -1,0 +1,36 @@
+.buttonContiner {
+    display: flex;
+    justify-content: end;
+}
+
+.closeButton {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 3px 10px;
+    border-right: 10px;
+    
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.cardBorder {
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imageSize {
+    width: 60px;
+}

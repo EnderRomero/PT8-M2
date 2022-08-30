@@ -1,0 +1,28 @@
+.continer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.searchButton {
+    border: 2px solid rgb(2, 255, 2);
+    color: rgb(2, 255, 2);
+    border-radius: 5px;
+    width: 100px;
+    padding: auto;
+}
+
+.bgColor {
+    background-color: darkslategrey;
+}
+
+.heightComun {
+    height: 35px;
+}
